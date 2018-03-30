@@ -4,6 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.maica.southstarapp.Dashboard">
 
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/view_medicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/blacktrans"
+                android:text="View Medicine"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/view_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/blacktrans"
+                android:text="View Order"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/store_locator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/blacktrans"
+                android:text="Store Locator"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/sales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/blacktrans"
+                android:text="Sales Module"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/transac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/blacktrans"
+                android:text="Transaction History"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btn_med_dictionary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/blacktrans"
+                android:text="Medicine Dictionary"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btn_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/blacktrans"
+                android:text="Chat"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/blacktrans"
+                android:text="Logout"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

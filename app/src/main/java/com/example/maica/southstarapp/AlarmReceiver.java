@@ -3,13 +3,18 @@ package com.example.maica.southstarapp;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 
 public class AlarmReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        // TODO: This method is called when the BroadcastReceiver is receiving
-        // an Intent broadcast.
-        throw new UnsupportedOperationException("Not yet implemented");
+        String state = intent.getExtras().getString("extra");
+        Log.e("MyActivity", "In the receiver with " + state);
+
+        Intent serviceIntent = new Intent(context,RingtonePlayingService.class);
+        serviceIntent.putExtra("extra", state);
+
+        context.startService(serviceIntent);
     }
 }

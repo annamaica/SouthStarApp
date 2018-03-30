@@ -4,6 +4,170 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.maica.southstarapp.View_medicine">
 
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/medicineImage"
+                android:layout_width="223dp"
+                android:layout_height="221dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Code:"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name:"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dosage:"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Price: "
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stock: "
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/view_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Code"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_dosage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dosage"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Price: "
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_stock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginLeft="50dp"
+               android:layout_marginTop="20dp">
+
+               <Button
+                   android:id="@+id/editbutton"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Edit"
+                   android:background="@color/blacktrans"
+                   android:layout_margin="15dp"
+                   android:textColor="#fff"
+                   android:layout_gravity="center"
+                   android:drawableLeft="@drawable/edit"/>
+
+               <Button
+                   android:id="@+id/deletebutton"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Delete"
+                   android:background="@color/blacktrans"
+                   android:layout_margin="15dp"
+                   android:textColor="#fff"
+                   android:layout_gravity="center"
+                   android:drawableLeft="@drawable/delete"/>
+           </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

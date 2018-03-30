@@ -1,4 +1,4 @@
-package com.example.priyanka.mapsdemo;
+package com.example.maica.southstarapp;
 
 import android.os.AsyncTask;
 import android.util.Log;
@@ -25,7 +25,7 @@ class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
         mMap = (GoogleMap)objects[0];
         url = (String)objects[1];
 
-        DownloadURL downloadURL = new DownloadURL();
+        DownloadUrl downloadURL = new DownloadUrl();
         try {
             googlePlacesData = downloadURL.readUrl(url);
         } catch (IOException e) {
@@ -59,8 +59,9 @@ class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
 
             LatLng latLng = new LatLng( lat, lng);
             markerOptions.position(latLng);
-            markerOptions.title(placeName + " : "+ vicinity);
-            markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+            markerOptions.title(placeName);
+            markerOptions.snippet(vicinity);
+            markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
 
             mMap.addMarker(markerOptions);
             mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));

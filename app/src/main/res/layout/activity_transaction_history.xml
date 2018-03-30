@@ -4,6 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.maica.southstarapp.Transaction_history">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/search_transac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Medicine"
+            android:inputType="textCapSentences" />
+
+        <ListView
+            android:id="@+id/transac_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -4,6 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.maica.southstarapp.View_Product">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/search_med"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Medicine"
+            android:inputType="textCapSentences" />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="390dp"
+            android:layout_marginTop="25dp" />
+
+        <Button
+            android:id="@+id/addmedicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@color/blacktrans"
+            android:text="ADD MEDICINE"
+            android:textColor="#fff" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

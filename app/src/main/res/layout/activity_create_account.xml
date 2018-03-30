@@ -4,6 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.maica.southstarapp.CreateAccount">
+
+
+    <LinearLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:backgroundTint="#fff"
+            android:ems="10"
+            android:hint="Email"
+            android:textColor="#fff"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-30dp"
+            android:src="@drawable/envelope" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:backgroundTint="#fff"
+            android:ems="10"
+            android:hint="Password"
+            android:textColor="#fff"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-30dp"
+            android:src="@drawable/locked" />
+
+        <EditText
+            android:id="@+id/conpassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:backgroundTint="#fff"
+            android:ems="10"
+            android:layout_marginTop="50dp"
+            android:hint="Confirm Password"
+            android:textColor="#fff"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-30dp"
+            android:src="@drawable/locked" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/rounded_corner"
+            android:drawableTop="@drawable/adduser"
+            android:paddingTop="10dp"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/loginaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#fff"
+            android:text="Already registered? Sign In here"
+            android:textAlignment="center"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

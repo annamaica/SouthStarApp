@@ -1,6 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order ID:"
+                android:textSize="17dp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Client:"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medicine Code:"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medicine Name:"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity:"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date Ordered:"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status:"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category:"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order ID"
+                android:textSize="17dp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/order1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Client"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/order2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/order3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medicine Code"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/order9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medicine Name"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/order4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/order7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/order5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date Ordered"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/order6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/order8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textSize="15dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -1,17 +1,13 @@
 package com.example.maica.southstarapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,7 +17,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Chat extends AppCompatActivity {
+public class Chat2 extends AppCompatActivity {
 
     List<UserObject> userlist;
     User_Adapter userAdapter;
@@ -48,13 +44,13 @@ public class Chat extends AppCompatActivity {
                     UserObject users = snapshot.getValue(UserObject.class);
                     String userhold = users.getUser_type();
                     if(userhold.equals("Admin")){
-                        userlist.add(users);
-                    }
-                    else{
                         //
                     }
+                    else{
+                        userlist.add(users);
+                    }
                 }
-                userAdapter = new User_Adapter(Chat.this, R.layout.user_list, userlist);
+                userAdapter = new User_Adapter(Chat2.this, R.layout.user_list, userlist);
                 listofuser.setAdapter(userAdapter);
             }
 
@@ -72,7 +68,7 @@ public class Chat extends AppCompatActivity {
                 user_id = id.getText().toString();
 
                 Intent intent = new Intent(getApplicationContext(), Chat_Message.class);
-
+                intent.putExtra("name", user_id);
                 startActivity(intent);
             }
         });

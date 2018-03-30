@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">SouthStarApp</string>
     <string name="title_activity_maps">Map</string>
+
+    <string-array name="items">
+        <item>Prescription</item>
+        <item>Non-Prescription</item>
+    </string-array>
 </resources>

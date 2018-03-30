@@ -4,6 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.maica.southstarapp.Medicine_dictionary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/search_med"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:hint="Search Medicine"
+            android:layout_marginBottom="5dp"
+            android:textColor="#ffffff"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sort by:"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radiogrp_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/btn_branded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branded"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/btn_generic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Generic"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_sort"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="280dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort"
+            android:background="@color/blacktrans"
+            android:padding="15dp"
+            android:textColor="#fff"/>
+
+        <ListView
+            android:id="@+id/list_med_dictionary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
